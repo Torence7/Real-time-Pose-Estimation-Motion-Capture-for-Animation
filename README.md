@@ -6,11 +6,11 @@ This project combines 3D pose estimation and inverse kinematics to create a low-
 
 ## 🔧 Features
 
-- Real-time full-body and dual-hand motion capture
+- Real-time full-body motion capture
 - UDP communication between Python and Unity
-- Unity integration using Full Body IK or custom rigging
+- Unity integration using Full Body IK
+- Animation of humanoid models using pose data
 - Support for 3D visualization and digital interaction
-- Modular architecture for easy upgrades
 
 ---
 
@@ -22,3 +22,6 @@ Install all dependencies with:
 
 ```bash
 pip install -r requirements.txt
+```
+
+### Unity Requirements
