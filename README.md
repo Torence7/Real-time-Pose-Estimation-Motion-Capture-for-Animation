@@ -1,1 +1,24 @@
-# Real-time-Pose-Estimation-Motion-Capture-
+# Real-time Pose Estimation Motion Capture for Animation
+
+This project combines 3D pose estimation and inverse kinematics to create a low-cost, markerless motion capture system for animating humanoid virtual models in Unity. Using MediaPipe and OpenCV for pose estimation, the system extracts 3D joint coordinates and streams them to Unity via UDP. Unity receives this data to animate a humanoid model using inverse kinematics (IK) or direct bone manipulation.
+
+---
+
+## 🔧 Features
+
+- Real-time full-body and dual-hand motion capture
+- UDP communication between Python and Unity
+- Unity integration using Full Body IK or custom rigging
+- Support for 3D visualization and digital interaction
+- Modular architecture for easy upgrades
+
+---
+
+## 🧪 Setup Instructions
+
+### Python Requirements
+
+Install all dependencies with:
+
+```bash
+pip install -r requirements.txt
