@@ -24,4 +24,21 @@ Install all dependencies with:
 pip install -r requirements.txt
 ```
 
-### Unity Requirements
+###  Running from Unity (Webcam Input)
+1. Open Unity Hub and launch the project located in the ModelAnimation/ folder.
+2. Open the main scene (e.g., MainScene.unity).
+3. In the Hierarchy, ensure the following:
+   - Your model (e.g., UnityChan) is placed in the scene and correctly set up with FullBodyUnityChanBehaviour from SAFullBodyIK.
+   - The PythonProcessLauncher script is attached to a GameObject in the scene.
+4. In the Inspector, open the PythonProcessLauncher component and set the correct absolute path to the pose_estimation.py file under the scriptPath field.
+5. Press the Play button in Unity.
+6. Unity will automatically launch the Python script, activate the webcam, and begin receiving pose data via UDP to drive the model.
+
+###   Running Manually (Terminal / Standalone Use)
+Step 1: Run the Python Script (the script can be run with a presaved video/webcam input)
+Open a terminal and run:
+```bash
+python pose_estimation.py "Optional Video Path"
+```
+
+Step 2: Launch Unity - Open the Unity project via Unity Hub and press Play
