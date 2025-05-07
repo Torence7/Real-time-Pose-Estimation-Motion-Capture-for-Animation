@@ -2,17 +2,7 @@
 
 This project combines 3D pose estimation and inverse kinematics to create a low-cost, markerless motion capture system for animating humanoid virtual models in Unity. Using MediaPipe and OpenCV for pose estimation, the system extracts 3D joint coordinates and streams them to Unity via UDP. Unity receives this data to animate a humanoid model using inverse kinematics (IK) or direct bone manipulation.
 
----
-
-## 🔧 Features
-
-- Real-time full-body motion capture
-- UDP communication between Python and Unity
-- Unity integration using Full Body IK
-- Animation of humanoid models using pose data
-- Support for 3D visualization and digital interaction
-
----
+The project's inverse kinematics aspect takes inspiration from keel-210's OpenPose rig project: https://github.com/keel-210/OpenPose-Rig
 
 ## 🧪 Setup Instructions
 
@@ -35,6 +25,7 @@ pip install -r requirements.txt
 6. Unity will automatically launch the Python script, activate the webcam, and begin receiving pose data via UDP to drive the model.
 
 ###   Running Manually (Terminal / Standalone Use)
+Make sure to complete Steps 1-3. The PythonProcessLauncher is not needed for manual setup.
 Step 1: Run the Python Script (the script can be run with a presaved video/webcam input)
 Open a terminal and run:
 ```bash
